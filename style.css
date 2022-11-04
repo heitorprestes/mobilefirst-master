@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.page {
+    max-width: 38.4rem;
+    height: 199.5rem;
+    margin: auto;
+}
+
+header img {
+    width:  13.7rem;
+    height: 13.7rem;
+    margin-top: 32px;
+    margin-left: 124px;
+    margin-bottom: 29px;
+
+    animation: topdown 1s;
+}
+
+header {
+    background: #8E9AAF;
+    width: 38.4rem;
+    margin: auto;
+    padding-bottom: 2.9rem;
+}
+
+header p {
+    display: none;
+}
+
+h1 {
+    background: #CBC0D3;
+    color: #FFFFFF;
+
+    text-align: center;
+    font-family: 'staatliches',sans-serif;
+    font-size: 4.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    
+    height: 4.1rem;
+    padding-top: 4px;
+    padding-left: 12px;
+    
+    animation: topdown 1s;
+}
+
+main {
+    width: 38.4rem;
+    height: 180rem;
+    margin: auto;
+    background: #EFF1FF;
+    padding: 1.6rem 3.2rem 6rem;
+    
+}
+
+.card, .card2, .card3, .card4 {
+    margin-top: 6.3rem;
+    position: relative;
+
+    animation: downtop 1s 350ms backwards;
+}
+
+.card img, .card3 img {
+    height: 25rem;
+    width: 32rem;
+    border-radius: 2.0rem;
+    object-fit: cover;
+}
+
+.card2 img, .card4 img {
+    height: 45rem;
+    width: 32rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.card h2, .card2 h2, .card3 h2, .card4 h2 {
+    position: absolute;
+    top: 1.7rem;
+    right: 1.6rem;
+
+    font-family: 'staatliches', sans-serif;
+    font-size: 2.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-weight: 400;
+
+    color: #4A4E69;
+    background: #FEEAFA;
+    border-radius: 2rem;
+    width: 11.2rem;
+
+    animation: rightleft 2s;
+}
+
+main p {
+    font-family: 'palanquin', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    text-align: center;
+        
+    width: 30.5rem;
+    height: 7.5rem;
+   
+    margin-left: 8px;
+    
+    animation: rightleft 1s;
+}
+
+footer {
+    display: none;
+}
+
+.card:hover, .card2:hover, .card3:hover, .card4:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 700px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page {
+        height: 72rem;
+    }
+
+    body {
+        height: 72rem;
+        width: 128rem;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header {
+        position: absolute;
+        left: 0px;
+        height: 100vh;
+    }
+
+    header p {
+        display: block;
+        margin-top: 4rem;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 20px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+
+    main p {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 72rem;
+        background: none;
+        left: 47.5rem;
+    }
+
+    .card img {
+        height: 30rem;
+        margin-left: 30rem;
+        width: 50rem;
+    }
+
+    .card2 img {
+        height: 30rem;
+        width: 50rem;
+    }
+
+    .card2 h2 {
+        position: absolute;
+        left: 3rem;
+    }
+
+    .card3 img {
+        height: 30rem;
+        margin-left: 30rem;
+        width: 50rem;
+    }
+
+    .card4 img {
+        height: 30rem;
+        width: 50rem;
+    }
+
+    main {
+        grid-template-areas: "A A B"
+        "C C D";
+      }
+    
+      main div:nth-child(1) {
+        grid-area: A;
+      }
+    
+      main div:nth-child(2) {
+        grid-area: B;
+      }
+    
+      main div:nth-child(3) {
+        grid-area: C;
+      }
+    
+      main div:nth-child(4) {
+        grid-area: D;
+      }
+
+      footer {
+        display: block;
+        position: absolute;
+        bottom: 46px;
+        margin-left: 92rem;
+        
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+
+        text-align: center;
+
+        color: #4A4E69;
+      }
+
+      a {
+        color: #4A4E69;
+        text-decoration: none;
+        font-weight: 800;
+      }
+}
